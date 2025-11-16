@@ -1,4 +1,6 @@
 # TrollVNC
+## 粗暴修改旧款带有home键的iPad，新款iPad可能无法正常工作
+把iPad当iPhone才能让旧iPad正常工作
 
 [now-on-havoc]: https://havoc.app/search/TrollVNC
 
