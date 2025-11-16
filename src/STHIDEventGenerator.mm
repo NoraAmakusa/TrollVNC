@@ -163,7 +163,7 @@ NS_INLINE void _DTXCalcLinearPinchStartEndPoints(CGRect bounds, CGFloat pixelsSc
 #if !TARGET_IPHONE_SIMULATOR
     BOOL isPad = ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad);
     if (isPad) {
-        _physicalScreenSize = CGSizeMake(screenSize.height, screenSize.width);
+        _physicalScreenSize = CGSizeMake(screenSize.width, screenSize.height);
     } else {
 #endif
         _physicalScreenSize = CGSizeMake(screenSize.width, screenSize.height);

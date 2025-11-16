@@ -2972,7 +2972,8 @@ NS_INLINE CGPoint vncPointToDevicePoint(int vx, int vy) {
     dispatch_once(&sPadOnce, ^{
         sIsPad = ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad);
     });
-    int effRotQ = (rotQ + (sIsPad ? 3 : 0)) & 3;
+    //int effRotQ = (rotQ + (sIsPad ? 3 : 0)) & 3;
+    int effRotQ = rotQ;
 #else
     int effRotQ = rotQ;
 #endif
@@ -4391,7 +4392,7 @@ NS_INLINE int rotationForOrientation(UIInterfaceOrientation o) {
         sIsPad = ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad);
     });
     if (sIsPad) {
-        o = makeInterfaceOrientationRotate90(o);
+        //o = makeInterfaceOrientationRotate90(o);
     }
 #endif
     switch (o) {

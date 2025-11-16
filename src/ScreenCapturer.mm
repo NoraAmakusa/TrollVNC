@@ -80,8 +80,8 @@ void CARenderServerRenderDisplay(kern_return_t a, CFStringRef b, IOSurfaceRef su
 #if !TARGET_IPHONE_SIMULATOR
     BOOL isPad = ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad);
     if (isPad) {
-        width = (int)round(screenSize.height);
-        height = (int)round(screenSize.width);
+        width = (int)round(screenSize.width);
+        height = (int)round(screenSize.height);
     } else {
 #endif
         width = (int)round(screenSize.width);
